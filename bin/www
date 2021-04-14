@@ -31,7 +31,7 @@ var server = http.createServer(app);
 //   const address = server.address()
 //   console.log('Listening on port %d', address.port);
 // })
-app.listen(process.env.PORT || 5050)
+server.listen(process.env.PORT || 5050)
 
 server.on('error', onError);
 server.on('listening', onListening);
