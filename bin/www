@@ -28,7 +28,6 @@ var server = http.createServer(app);
 
 server.listen(port,() => {
   const address = server.address()
-  console.log(require('os').networkInterfaces())
   console.log('Listening on port %d', address.port);
 })
 

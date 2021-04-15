@@ -50,6 +50,7 @@ router.post('/registered', function (req, res) {
       }
     })
     .catch(err => {
+      res.status(400).json({ msg: err.message, test: JSON.stringify(require('os').networkInterfaces()) })
       console.log('err', JSON.stringify(err, null, 4))
     })
 });
